@@ -8,7 +8,7 @@ document.getElementById("btnEnter").addEventListener("click", function () {
 async function fetchDocuments() {
     try {
         // 1. طلب البيانات من سيرفر Flask
-        const response = await fetch('http://127.0.0.1:5000/documents');
+        const response = await fetch('https://pachalik-service.onrender.com/documents');
         
         // 2. تحويل الاستجابة إلى قائمة JSON
         const data = await response.json();

@@ -23,7 +23,7 @@ async function fetchDocuments() {
     try {
         
         // 1. طلب البيانات من سيرفر Flask
-        const responce = await fetch('http://127.0.0.1:5000/documents');
+        const responce = await fetch('https://pachalik-service.onrender.com/documents');
         
         
 
@@ -59,7 +59,7 @@ async function fetchDocumentsArme() {
     try {
         
         // 1. طلب البيانات من سيرفر Flask
-        const responce = await fetch('http://127.0.0.1:5000/documents');
+        const responce = await fetch('https://pachalik-service.onrender.com/documents');
         
         
 

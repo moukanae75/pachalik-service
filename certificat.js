@@ -76,7 +76,7 @@ async function fetchDocumentscertificat() {
     try {
         
         // 1. طلب البيانات من سيرفر Flask
-        const responce = await fetch('http://127.0.0.1:5000/documents');
+        const responce = await fetch('https://pachalik-service.onrender.com/documents');
         
         
 
@@ -111,7 +111,7 @@ async function fetchDocumentscertificat1() {
     try {
         
         // 1. طلب البيانات من سيرفر Flask
-        const responce = await fetch('http://127.0.0.1:5000/documents');
+        const responce = await fetch('https://pachalik-service.onrender.com/documents');
         
         
 
@@ -146,7 +146,7 @@ async function fetchDocumentscertificat2() {
     try {
         
         // 1. طلب البيانات من سيرفر Flask
-        const responce = await fetch('http://127.0.0.1:5000/documents');
+        const responce = await fetch('https://pachalik-service.onrender.com/documents');
         
         
 
@@ -181,7 +181,7 @@ async function fetchDocumentscertificat3() {
     try {
         
         // 1. طلب البيانات من سيرفر Flask
-        const responce = await fetch('http://127.0.0.1:5000/documents');
+        const responce = await fetch('https://pachalik-service.onrender.com/documents');
         
         
 
@@ -216,7 +216,7 @@ async function fetchDocumentscertificat4() {
     try {
         
         // 1. طلب البيانات من سيرفر Flask
-        const responce = await fetch('http://127.0.0.1:5000/documents');
+        const responce = await fetch('https://pachalik-service.onrender.com/documents');
         
         
 

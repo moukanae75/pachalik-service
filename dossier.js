@@ -1,7 +1,7 @@
 function chargerService(id, nomService) {
     document.getElementById("titreService").textContent = nomService;
 
-    fetch("http://127.0.0.1:5000/service/" + id)
+    fetch("https://pachalik-service.onrender.com/service/" + id)
         .then(response => response.json())
         .then(data => {
 
