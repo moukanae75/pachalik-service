@@ -1,19 +1,16 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 import psycopg2
+import os
 
 app = Flask(__name__)
 CORS(app) # السماح للـ JavaScript بالاتصال بالـ API بدون مشاكل CORS
 
 # Connexion à PostgreSQL
 def get_db_connection():
-    conn = psycopg2.connect(
-        host="localhost",
-        port=5432,
-        database="postgres",
-        user="postgres",
-        password="mimi123"
-    )
+    # سيقوم بجلب الرابط من إعدادات Render إذا وجد، وإلا سيستخدم الرابط المباشر الذي أعطيتني إياه
+    db_url = os.environ.get("DATABASE_URL", "postgresql://postgres_zc2b_user:OFk6zAu07nlskWNF7cZaZ24jEhEqhfzU@dpg-d9njqu3ncjis73abltjg-a.oregon-postgres.render.com/postgres_zc2b")
+    conn = psycopg2.connect(db_url)
     return conn
 
 
