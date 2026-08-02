@@ -36,6 +36,7 @@ INSERT INTO document (service_id, document) VALUES
 (1, 'Quatre photos'),
 (1, 'Ancien passeport (si disponible)'),
 (1, 'Timbre de 500 DH'),
+(1, 'Timbre de 800 DH'),
 
 
 
