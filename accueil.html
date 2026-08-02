@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+
+    <link rel="stylesheet" href="accueil.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+
+    <i class="fa-solid fa-bell"></i>
+
+    <h2>Accueil</h2>
+
+    <div class="menu">
+
+        <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+
+        <div id="dropdown" class="dropdown">
+
+            <a href="#" onclick="aboutApp()">
+                <i class="fa-solid fa-circle-info"></i>
+                À propos
+            </a>
+
+            <a href="#" onclick="helpApp()">
+                <i class="fa-solid fa-circle-question"></i>
+                Aide
+            </a>
+
+        
+
+        </div>
+
+    </div>
+
+</header>
+
+<section class="welcome">
+
+    <div class="text">
+
+        <h3>Bienvenue à la Pachalik</h3>
+
+        <p>
+            Choisissez le service que vous souhaitez consulter.
+        </p>
+
+    </div>
+
+    <img src="images/welcome.jpg" alt="Bienvenue">
+
+</section>
+
+<section class="services">
+
+    <div class="card" onclick="location.href='passeport.html'">
+        <i class="fa-solid fa-passport"></i>
+        <h3>Passeport</h3>
+    </div>
+
+    <div class="card" onclick="location.href='arme.html'">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h3>Autorisation de port d'arme</h3>
+    </div>
+
+    <div class="card" onclick="location.href='association.html'">
+        <i class="fa-solid fa-users"></i>
+        <h3>Associations</h3>
+    </div>
+
+    <div class="card" onclick="location.href='service-militaire.html'">
+        <i class="fa-solid fa-user-shield"></i>
+        <h3>Service militaire obligatoire</h3>
+    </div>
+
+    <div class="card" onclick="location.href='certificat.html'">
+        <i class="fa-solid fa-file-lines"></i>
+        <h3>Certificats administratifs</h3>
+    </div>
+
+</section>
+
+<script src="accueil.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+							*{
+							    margin:0;
+							    padding:0;
+							    box-sizing:border-box;
+							    font-family:Arial, Helvetica, sans-serif;
+							}
+							body{
+							    background:#f4f6f9;
+							}
+							/* Header */
+							header{
+							    height:70px;
+							    background:#0D47A1;
+							    color:white;
+							    display:flex;
+							    align-items:center;
+							    padding:20px;
+							}
+							.back{
+							    color:white;
+							    font-size:25px;
+							    text-decoration:none;
+							}
+							header h2{
+							    flex:1;
+							    text-align:center;
+							}
+							/* Container */
+							.container{
+							    width:90%;
+							    max-width:950px;
+							    margin:30px auto;
+							}
+							.image{
+							    text-align:center;
+							}
+							.image img{
+							    width:170px;
+							}
+							.container h3{
+							    text-align:center;
+							    color:#0D47A1;
+							    margin:20px 0;
+							}
+							/* Card principale */
+							.documents{
+							    background:white;
+							    padding:30px;
+							    border-radius:18px;
+							    box-shadow:0 5px 15px rgba(0,0,0,.15);
+							}
+							/* Description */
+							.description{
+							    text-align:center;
+							    color:#555;
+							    font-size:17px;
+							    line-height:1.8;
+							    margin-bottom:35px;
+							}
+							/* Informations */
+							.infos{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    margin-top:25px;
+}
+
+.info{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+}
+
+.info i{
+    font-size:35px;
+    color:#0D47A1;
+    margin-bottom:15px;
+}
+
+.info h4{
+    color:#0D47A1;
+    margin-bottom:10px;
+}
+
+.info p{
+    font-size:18px;
+    font-weight:bold;
+}
+							/* Bouton */
+							.btn{
+							    display:block;
+							    width:100%;
+							    padding:16px;
+							    margin-top:15px;
+							    text-align:center;
+							    text-decoration:none;
+							    background:#0D47A1;
+							    color:white;
+							    font-size:17px;
+							    font-weight:bold;
+							    border-radius:12px;
+							    transition:.3s;
+							}
+							.btn:hover{
+							    background:#1565C0;
+							}
+							/* Remarque */
+							.remarque{
+							    margin-top:30px;
+							    padding:18px;
+							    background:#E3F2FD;
+							    border-left:6px solid #0D47A1;
+							    border-radius:12px;
+							    display:flex;
+							    align-items:flex-start;
+							    gap:15px;
+							}
+							.remarque i{
+							    font-size:28px;
+							    color:#0D47A1;
+							    margin-top:3px;
+							}
+							.remarque h4{
+							    color:#0D47A1;
+							    margin-bottom:8px;
+							}
+							.remarque p{
+							    color:#333;
+							    line-height:1.7;
+							    font-size:15px;
+							}
+							/* Responsive */
+							@media(max-width:768px){
+							    .infos{
+							        grid-template-columns:1fr;
+							    }
+							    .image img{
+							        width:130px;
+							    }
+							    header h2{
+							        font-size:20px;
+							    }
+							    .description{
+							        font-size:16px;
+							    }
+ .btn{
+							        font-size:16px;
+							    }
+							}

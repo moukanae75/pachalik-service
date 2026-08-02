@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Associations</title>
+
+    <link rel="stylesheet" href="association.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <a href="accueil.html" class="back">
+
+        <i class="fa-solid fa-arrow-left"></i>
+
+    </a>
+
+    <h2>Associations</h2>
+
+</header>
+
+<div class="container">
+
+    <div class="image">
+
+        <img src="images/association.png" alt="Association">
+
+    </div>
+
+    <h3>Création d'une association</h3>
+
+    <div class="documents">
+
+        <h3>Documents requis</h3>
+        <div id="association"></div>
+
+       <!-- <ul>
+
+            <li>Dépôt du dossier 48 heures avant le dépôt.</li>
+
+            <li>Copie de la Carte Nationale d'Identité (CNI).</li>
+
+            <li>Certificat de résidence délivré par le Cheikh accompagné d'une copie de la CNI.</li>
+
+            <li>Six copies légalisées des statuts de l'association.</li>
+
+            <li>Six copies légalisées du règlement intérieur (si applicable).</li>
+
+            <li>Six copies légalisées du procès-verbal de l'assemblée générale.</li>
+
+            <li>Six copies légalisées de la liste des membres de l'association.</li>
+
+            <li>Copie de la CNI de chaque membre.</li>
+
+            <li>Contrat de location ou document justifiant le siège de l'association.</li>
+
+        </ul>-->
+
+        <div class="infos">
+
+            <div class="info">
+
+                <i class="fa-solid fa-money-bill-wave"></i>
+
+                <h4>Frais</h4>
+
+                <p>Gratuit</p>
+
+            </div>
+
+            <div class="info">
+
+                <i class="fa-solid fa-clock"></i>
+
+                <h4>Durée</h4>
+
+                <p>15 jours</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+<script>async function fetchDocumentscertificat4() {
+    
+    try {
+        
+        // 1. طلب البيانات من سيرفر Flask
+        const responce = await fetch('http://127.0.0.1:5000/documents');
+        
+        
+
+        
+        // 2. تحويل الاستجابة إلى مصفوفة JSON
+        const data = await responce.json();
+
+        
+
+        // 3. فلترة البيانات للحصول على العناصر الخاصة بـ "Passeport" فقط
+        const passportDocs = data.filter(item => item.service === "Associations");
+
+    
+
+        // 4. عرض النتائج داخل العنصر docummentpassport
+        const container = document.getElementById("association");
+        if (container) {
+            container.innerHTML = "<ul>" + 
+                passportDocs.map(item => `<li>${item.document}</li>`).join('') + 
+            "</ul>";
+        }
+
+    } catch (error) {
+        
+        console.error('خطأ أثناء جلب البيانات:', error);
+    }
+}
+
+fetchDocumentscertificat4();</script>
+</html>

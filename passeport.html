@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passeport - PACHALIK</title>
+
+    <link rel="stylesheet" href="passeport.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+
+    <a href="accueil.html" class="back">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+
+    <h2>Passeport</h2>
+
+</header>
+
+<div class="container">
+
+    <div class="image">
+        <img src="images/passport.png" alt="Passeport">
+    </div>
+
+    <h3>Choisissez un type de passeport</h3>
+
+    <div class="cards">
+
+        <div class="card" onclick="showBio()">
+            <i class="fa-solid fa-passport"></i>
+            <h4>Passeport biométrique</h4>
+        </div>
+
+        <div class="card" onclick="showMineur()">
+            <i class="fa-solid fa-child"></i>
+            <h4>Passeport mineur</h4>
+        </div>
+
+    </div>
+
+    <!-- Passeport biométrique ###-->
+
+    <div id="bio" class="documents">
+
+        <h3>Documents requis</h3>
+        
+        <div id="docummentpassport"></div>
+
+        
+
+        <div class="infos">
+
+            <div class="info">
+                <i class="fa-solid fa-money-bill-wave"></i>
+                <h4>Frais</h4>
+                <p>500 DH</p>
+            </div>
+
+            <div class="info">
+                <i class="fa-solid fa-clock"></i>
+                <h4>Durée</h4>
+                <p>20 jours</p>
+            </div>
+
+        </div>
+
+        <div class="remarque">
+            <i class="fa-solid fa-circle-info"></i>
+            <p>
+                <strong>Remarque :</strong><br>
+                Veuillez préparer tous les documents requis avant de déposer votre demande.
+            </p>
+        </div>
+
+    </div>
+
+      <!-- Passeport mineur## -->
+
+    <div id="mineur" class="documents">
+
+        <h3>Documents requis</h3>
+
+        <ul>
+            <li>Autorisation parentale accompagnée d'une copie de la CNI du père et de la mère</li>
+            <li>Acte de naissance</li>
+            <li>Quatres photos</li>
+            <li>Ancien passeport (si disponible)</li>
+            <li>Timbre de 500 DH</li>
+        </ul>
+
+        <div class="infos">
+
+            <div class="info">
+                <i class="fa-solid fa-money-bill-wave"></i>
+                <h4>Frais</h4>
+                <p>500 DH</p>
+            </div>
+
+            <div class="info">
+                <i class="fa-solid fa-clock"></i>
+                <h4>Durée</h4>
+                <p>20 jours</p>
+            </div>
+
+        </div>
+
+        <div class="remarque">
+            <i class="fa-solid fa-circle-info"></i>
+            <p>
+                <strong>Remarque :</strong><br>
+                Veuillez préparer tous les documents requis avant de déposer votre demande.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<script src="passeport.js"></script>
+
+</body>
+</html>
+

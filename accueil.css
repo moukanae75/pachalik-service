@@ -1,0 +1,220 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f3f3f3;
+}
+
+/* Header */
+
+header{
+    background:#0D47A1;
+    color:white;
+    height:70px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 25px;
+}
+
+header h2{
+    font-size:28px;
+}
+
+header i{
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* Carte */
+
+.welcome{
+
+    width:90%;
+    max-width:900px;
+
+    margin:30px auto;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+
+}
+
+.text{
+
+    width:55%;
+
+}
+
+.text h3{
+
+    font-size:32px;
+    color:#0D47A1;
+
+    margin-bottom:15px;
+
+}
+
+.text p{
+
+    font-size:20px;
+    color:#555;
+
+    line-height:32px;
+
+}
+
+.welcome img{
+
+    width:220px;
+    height:auto;
+
+}
+/* ========================= */
+/*        SERVICES           */
+/* ========================= */
+
+.services{
+    width:90%;
+    max-width:900px;
+    margin:30px auto;
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.card{
+    background:#fff;
+    border-radius:18px;
+    padding:25px 15px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.12);
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 8px 18px rgba(0,0,0,0.18);
+}
+
+.card i{
+    font-size:45px;
+    color:#0D47A1;
+    margin-bottom:15px;
+}
+
+.card h3{
+    font-size:17px;
+    color:#333;
+    line-height:24px;
+    font-weight:bold;
+}
+
+/* La dernière carte au centre */
+
+.card:last-child{
+    grid-column:1 / span 2;
+    width:48%;
+    justify-self:center;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.services{
+
+    grid-template-columns:1fr;
+
+}
+
+.card:last-child{
+
+    width:100%;
+    grid-column:auto;
+
+}
+
+}
+.menu{
+    position:relative;
+}
+
+.menu i{
+    cursor:pointer;
+}
+
+.dropdown{
+
+    display:none;
+
+    position:absolute;
+
+    top:35px;
+    right:0;
+
+    width:220px;
+
+    background:white;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+    overflow:hidden;
+
+    z-index:1000;
+
+}
+
+.dropdown a{
+
+    display:block;
+
+    padding:14px;
+
+    color:#333;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.dropdown a:hover{
+
+    background:#f4f6f9;
+
+}
+
+.dropdown i{
+
+    margin-right:10px;
+
+    color:#0D47A1;
+
+}
+
+
+

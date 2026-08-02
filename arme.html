@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autorisation de port d'arme</title>
+
+    <link rel="stylesheet" href="arme.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+
+    <a href="accueil.html" class="back">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+
+    <h2>Autorisation de port d'arme</h2>
+
+</header>
+
+<div class="container">
+
+    <div class="image">
+        <img src="images/arme.png" alt="Autorisation">
+    </div>
+
+    <h3>Choisissez un type de demande</h3>
+
+    <div class="cards">
+
+        <div class="card" onclick="showPremiere()">
+
+            <i class="fa-solid fa-file-circle-plus"></i>
+
+            <h4>Première demande</h4>
+
+        </div>
+
+        <div class="card" onclick="showRenouvellement()">
+
+            <i class="fa-solid fa-rotate"></i>
+
+            <h4>Renouvellement</h4>
+
+        </div>
+
+    </div>
+
+    <!-- Première demande -->
+
+    <div id="premiere" class="documents">
+
+        <h3>Documents requis</h3>
+
+        <!-- <ul>
+
+            <li>Demande écrite adressée à la Wilaya</li>
+
+            <li>Casier judiciaire et du tribunal</li>
+
+            <li>Certificat médical</li>
+
+            <li>Timbres fiscaux : 600 DH + 300 DH + 200 DH</li>
+
+        </ul> -->
+
+        <div id="documentarme"></div>
+
+        <div class="infos">
+
+            <div class="info">
+
+                <i class="fa-solid fa-money-bill-wave"></i>
+
+                <h4>Frais</h4>
+
+                <p>1100 DH</p>
+
+            </div>
+
+            <div class="info">
+
+                <i class="fa-solid fa-clock"></i>
+
+                <h4>Durée</h4>
+
+                <p>15 jours</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Renouvellement -->
+
+    <div id="renouvellement" class="documents">
+
+        <h3>Documents requis</h3>
+    <div id=Renouvellement> hhhh</div>
+       <!-- <ul>
+
+            <li>Demande de renouvellement</li>
+
+            <li>Copie de la Carte Nationale et de l'ancien permis</li>
+
+            <li>Casier judiciaire</li>
+
+            <li>Assurance</li>
+
+            <li>Carte de l'Université Fédérale</li>
+
+            <li>Attestation sur l'honneur</li>
+
+            <li>Timbres fiscaux : 600 DH + 300 DH + 200 DH</li>
+
+            <li>Deux photos d'identité récentes</li>
+
+        </ul>-->
+
+        <div class="infos">
+
+            <div class="info">
+
+                <i class="fa-solid fa-money-bill-wave"></i>
+
+                <h4>Frais</h4>
+
+                <p>1100 DH</p>
+
+            </div>
+
+            <div class="info">
+
+                <i class="fa-solid fa-clock"></i>
+
+                <h4>Durée</h4>
+
+                <p>15 jours</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="arme.js"></script>
+
+</body>
+</html>

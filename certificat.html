@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificats administratifs</title>
+
+    <link rel="stylesheet" href="certificat.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+
+    <a href="accueil.html" class="back">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+
+    <h2>Certificats administratifs</h2>
+
+</header>
+
+<div class="container">
+
+    <div class="image">
+        <img src="images/certificat.png" alt="Certificats">
+    </div>
+
+    <h3>Choisissez un certificat</h3>
+
+    <div class="cards">
+
+        <div class="card" onclick="showResidence()">
+            <i class="fa-solid fa-house"></i>
+            <h4>Certificat de résidence</h4>
+           
+        </div>
+
+        <div class="card" onclick="showAdministratif()">
+            <i class="fa-solid fa-location-dot"></i>
+            <h4>Certificat administratif de résidence</h4>
+        </div>
+
+        <div class="card" onclick="showDeces()">
+            <i class="fa-solid fa-cross"></i>
+            <h4>Certificat de décès</h4>
+        </div>
+
+        <div class="card" onclick="showNaissance()">
+            <i class="fa-solid fa-baby"></i>
+            <h4>Acte de naissance</h4>
+        </div>
+
+        <div class="card" onclick="showProfession()">
+            <i class="fa-solid fa-briefcase"></i>
+            <h4>Certificat de profession</h4>
+        </div>
+
+    </div>
+
+    <!-- Certificat de résidence -->
+
+    <div id="residence" class="documents">
+
+        <h3>Documents requis</h3>
+         <div id="résidence"> </div>
+        <!-- <ul>
+            <li>Acte de naissance.</li>
+            <li>Copie de la Carte Nationale d'Identité (CNI).</li>
+            <li>Deux photos d'identité.</li>
+        </ul>-->
+
+    </div>
+
+    <!-- Certificat administratif de résidence -->
+
+    <div id="administratif" class="documents">
+
+        <h3>Documents requis</h3>
+        <div id="certificat"> </div>
+
+      <!--  <ul>
+            <li>Copie du passeport.</li>
+            <li>Copie de la carte de séjour.</li>
+            <li>Deux photos d'identité.</li>
+            <li>Acte de naissance.</li>
+            <li>Copie de la Carte Nationale d'Identité (CNI).</li>
+        </ul>-->
+
+    </div>
+
+    <!-- Certificat de décès -->
+
+    <div id="deces" class="documents">
+
+        <h3>Documents requis</h3>
+        <div id="Certificat de décès"> </div>
+
+       <!-- <ul>
+            <li>Douze témoins.</li>
+            <li>Copie de la Carte Nationale d'Identité de chaque témoin.</li>
+            <li>Copie de la Carte Nationale d'Identité du déclarant.</li>
+        </ul>-->
+
+    </div>
+
+    <!-- Acte de naissance -->
+
+    <div id="naissance" class="documents">
+
+        <h3>Documents requis</h3>
+        <div id="Acte de naissance"> </div>
+
+         <!--<ul>
+            <li>Déclaration des parents accompagnée de l'acte de mariage.</li>
+            <li>Copie de la Carte Nationale d'Identité des parents.</li>
+            <li>Deux témoins.</li>
+            <li>Copie de la Carte Nationale d'Identité de chaque témoin.</li>
+            <li>Déclaration de la sage-femme.</li>
+        </ul>-->
+
+    </div>
+
+    <!-- Certificat de profession -->
+
+    <div id="profession" class="documents">
+
+        <h3>Documents requis</h3>
+        <div id="Certificat de profession"> </div>
+
+         <!--<ul>
+            <li>Copie de la Carte Nationale d'Identité (CNI).</li>
+            <li>Déclaration sur l'honneur.</li>
+            <li>Préciser le service destinataire.</li>
+        </ul>-->
+
+    </div>
+
+</div>
+
+<script src="certificat.js"></script>
+
+
+</body>
+</html>
