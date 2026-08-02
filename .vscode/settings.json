@@ -10,6 +10,22 @@
             "database": "postgres",
             "username": "postgres",
             "password": "mimi123"
+        },
+        {
+            "pgOptions": {
+                "ssl": {
+                    "rejectUnauthorized": true
+                }
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "dpg-d9njqu3ncjis73abltjg-a.oregon-postgres.render.com",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "postgres",
+            "database": "postgres_zc2b",
+            "username": "postgres_zc2b_user",
+            "password": "OFk6zAu07nlskWNF7cZaZ24jEhEqhfzU"
         }
     ]
 }

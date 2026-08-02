@@ -36,8 +36,8 @@ INSERT INTO document (service_id, document) VALUES
 (1, 'Quatre photos'),
 (1, 'Ancien passeport (si disponible)'),
 (1, 'Timbre de 500 DH'),
-(1, 'Timbre de 600 DH'),
-(1, 'Timbre de 700 DH'),
+
+
 
 (2, 'Autorisation parentale accompagnée d''une copie de la CNI du père et de la mère'),
 (2, 'Quatre photos'),
