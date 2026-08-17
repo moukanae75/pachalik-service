@@ -9,7 +9,7 @@ CORS(app) # السماح للـ JavaScript بالاتصال بالـ API بدو�
 # Connexion à PostgreSQL
 def get_db_connection():
     # سيقوم بجلب الرابط من إعدادات Render إذا وجد، وإلا سيستخدم الرابط المباشر الذي أعطيتني إياه
-    db_url = os.environ.get("DATABASE_URL", "postgresql://postgres_zc2b_user:OFk6zAu07nlskWNF7cZaZ24jEhEqhfzU@dpg-d9njqu3ncjis73abltjg-a.oregon-postgres.render.com/postgres_zc2b")
+    db_url = os.environ.get("DATABASE_URL", "postgresql://postgres_pb2u_user:HWNjgtk3ALiTcG9yOzhG6ceUjeKxvwG9@dpg-da1nsuf40ujc73c4arfg-a.virginia-postgres.render.com/postgres_pb2u")
     conn = psycopg2.connect(db_url)
     return conn
 
